@@ -1,0 +1,83 @@
+.outer-div {
+    width: 300px;
+    height: 200px;
+    background-color: lightblue;
+    position: relative;
+    overflow: hidden; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+  }
+
+  .inner-div {
+    width: 100%;
+    height: 50%; 
+    background-color: coral;
+    position: absolute;
+    bottom: -32%; 
+    transition: bottom 0.3s ease; 
+  }
+.handle:hover{
+ opacity: 0.9;
+ 
+}
+.handle{
+  opacity: 0.5;
+  background-color: #fb5849;
+ }
+
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block; /* Show the dropdown when hovering */
+}
+
+/* Optional: add transition effects */
+.nav-item.dropdown .dropdown-menu {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out; /* Optional: smooth transition */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1; /* Fade in the dropdown */
+}
+
+  .outer-div:hover .inner-div {
+    bottom: 0; 
+  }
+  .card-img-top:hover{
+    filter: brightness(30%);
+  }
+  .circle{
+    display: none;
+    justify-content: center;
+    font-size: 40px;
+  }
+  .cursive{
+    font-family:'Dancing Script', cursive ;
+    font-size: 54px;
+    font-weight: 700
+  }
+
+  .image:hover .circle{
+    display: flex;
+   
+  }
+  .navbar-nav .nav-link.active {
+    color: red !important;  /* Change color to orange */
+  }
+  
+  .navbar-nav .nav-link {
+    transition: color 0.3s ease; /* Optional: smooth color transition */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f57c00; /* Optional: color on hover */
+  }
+  
+
+
+  

@@ -1,0 +1,4 @@
+{count==4?<Foodcard index={(count+1)}/> : <Foodcard index={(count+1)%5}/>}
+            {count==3?<Foodcard index={(count+2)}/> : <Foodcard index={(count+2)%5}/>}
+            {count==2?<Foodcard index={(count+3)}/> : <Foodcard index={(count+3)%5}/>}
+            {count==1?<Foodcard index={(count+4)}/> : <Foodcard index={(count+4)%5}/>}
